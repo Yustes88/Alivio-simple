@@ -37,7 +37,7 @@ body {
   font-family: inherit;
   color: #fff;
   letter-spacing: .5px;
-  font-size: 2rem;
+  font-size: 2.2rem;
   display: inline-block;
   transition: all 0.2s; }
   .btn:hover {
@@ -85,17 +85,16 @@ body {
   .nav__list {
     list-style: none;
     font-family: inherit;
+    color: inherit;
     display: flex;
     justify-content: space-between;
     font-weight: 400; }
-  .nav__item {
-    display: inline-block; }
-  .nav__link:link, .nav__link:active {
+  .nav__link:link, .nav__link:visited {
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 2.2rem;
     padding: 1.5rem 4rem;
     color: #292929;
-    display: block;
+    display: inline-block;
     transition: all 0.2s; }
   .nav__link:hover, .nav__link:active {
     background-color: #e9eeee;
