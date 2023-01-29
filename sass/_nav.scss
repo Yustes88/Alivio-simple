@@ -1,0 +1,61 @@
+.nav {
+  display: flex;
+  align-items: center;
+  &__logo {
+    img {
+      width: 8rem;
+    }
+  }
+
+  &-box {
+    display:flex;
+    justify-content: space-around;
+
+    @media only screen and (max-width: $bg-large) {
+      display: none;
+      visibility: hidden;
+  }
+  }
+
+  &__list {
+    list-style: none;
+    font-family: inherit;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+
+   
+  }
+
+  &__item {
+    display: inline-block;
+  }
+
+  &__link:link,
+  &__link:active {
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 1.5rem 4rem;
+    color: $color-grey-1;
+    display: block;
+    transition: all 0.2s;
+  }
+
+  &__link:hover,
+  &__link:active {
+    background-color: $color-primary-light-1;
+    transform: translateY(-3px);
+  }
+
+  &__link:focus {
+    outline: none;
+    outline: $outline-focus;
+  }
+
+  &__btns {
+    display: flex;
+    gap: 1rem;
+  }
+
+
+}

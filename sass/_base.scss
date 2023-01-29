@@ -16,6 +16,11 @@ $box-shadow-1: 0 2rem 5rem rgba($color-grey-1, 0.05);
 // OUTLINE
 $outline-focus: 1px solid $color-primary-2;
 
+// MEDIA QUERY
+$bg-largest: 68.75em; // 1100px
+$bg-large: 68.75em; // 900px
+$bg-large: 56.25em; // 900px
+
 *,
 *::before,
 *::after {
@@ -27,6 +32,10 @@ $outline-focus: 1px solid $color-primary-2;
 html {
   font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
   box-sizing: border-box;
+
+  @media only screen and (max-width: $bg-largest) {
+    font-size: 50%;
+  }
 }
 
 body {
@@ -35,19 +44,33 @@ body {
   font-weight: 300;
 }
 
-.container {
-  width: 70vw;
-  margin: 0 auto;
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  font-size: 2rem;
+  border-bottom: 1px solid $color-grey-light-2;
+
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+
+  @media only screen and (max-width: $bg-large) {
+    justify-content: space-between;
+  }
 }
 
+
 .btn {
-  padding: 1.5rem 6rem;
+  padding: 1.5rem 3rem;
   border: none;
   border-radius: 3px;
   background-color: $color-primary-2;
+  font-family: inherit;
   color: $color-white;
   letter-spacing: .5px;
   font-size: 2rem;
+  display: inline-block;
   transition: all 0.2s;
   
   &:hover {
@@ -70,4 +93,29 @@ body {
     outline: $outline-focus;
   }
 
+}
+
+
+// MOBILE MENU BUTTON
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+
+  @media only screen and (max-width: $bg-large) {
+    display: block;
+  }
+}
+
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: $color-primary-1;
+}
+
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
 }
