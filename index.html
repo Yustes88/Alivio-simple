@@ -14,11 +14,13 @@
     <title>Alivio</title>
   </head>
   <body>
-    <nav class="nav__box">
-    <div class="container nav">
-        <div class="nav__logo">
-          <img src="img/logo.jpg" alt="Alivio logo">
-        </div>
+    <header class="header">
+      <div class="nav__logo">
+        <img src="img/logo.jpg" alt="Alivio logo">
+      </div>
+
+      <div class="nav-box">
+    <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item">
             <a href="#" class="nav__link">Why Alivio</a>
@@ -36,19 +38,31 @@
             <a href="#" class="nav__link">Pricing</a>
           </li>
         </ul>
-        <div class="nav__btns">
-          <button class="btn btn--white">Sign in</button>
-          <button class="btn">Start trial</button>
-        </div>
+      </nav>
+      
+      <div class="nav__btns">
+        <button class="btn btn--white">Sign in</button>
+        <button class="btn">Start trial</button>
+      </div>
     </div>
-  </nav>
-  
-    <header class="header">HEADER</header>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav menu-outline" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+
+</header>
+
+    
     <main>
+      <section class="hero">HERO</section>
       <section class="how-it-works">HOW IT WORKS</section>
       <section class="story">STORY</section>
       <section class="cta">CTA</section>
     </main>
     <footer class="footer">FOOTER</footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
