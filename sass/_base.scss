@@ -17,8 +17,9 @@ $box-shadow-1: 0 2rem 5rem rgba($color-grey-1, 0.05);
 $outline-focus: 1px solid $color-primary-2;
 
 // MEDIA QUERY
+$bg-largest2: 106em; // 1700px
+$bg-largest1: 81.25em; // 1300px
 $bg-largest: 68.75em; // 1100px
-$bg-large: 68.75em; // 900px
 $bg-large: 56.25em; // 900px
 
 *,
@@ -34,7 +35,7 @@ html {
   box-sizing: border-box;
 
   @media only screen and (max-width: $bg-largest) {
-    font-size: 50%;
+    font-size: 55%;
   }
 }
 
@@ -44,7 +45,19 @@ body {
   font-weight: 300;
 }
 
+.container {
+  max-width: 80vw;
+  margin: 0 auto;
+}
+
+// HEADINGS
+.heading--1 {
+  font-size: 6.5rem;
+  color: $color-primary-2;
+}
+
 .header {
+  height: 10vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -56,7 +69,7 @@ body {
   padding: 1rem 2rem;
   margin-top: 1rem;
 
-  @media only screen and (max-width: $bg-large) {
+  @media only screen and (max-width: $bg-largest) {
     justify-content: space-between;
   }
 }
@@ -69,7 +82,7 @@ body {
   background-color: $color-primary-2;
   font-family: inherit;
   color: $color-white;
-  letter-spacing: .5px;
+  letter-spacing: 1.4px;
   font-size: 2rem;
   display: inline-block;
   transition: all 0.2s;
@@ -104,7 +117,7 @@ body {
   cursor: pointer;
   display: none;
 
-  @media only screen and (max-width: $bg-large) {
+  @media only screen and (max-width: $bg-largest) {
     display: block;
   }
 }
