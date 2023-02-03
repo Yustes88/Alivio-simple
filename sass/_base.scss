@@ -56,6 +56,23 @@ body {
   color: $color-primary-2;
 }
 
+.heading--2 {
+  font-size: 5rem;
+  color: $color-primary-2;
+  line-height: 6rem;
+}
+
+.heading--sub {
+  font-size: 2.4rem;
+  color: $color-grey-2;
+  font-weight: 400;
+}
+
+// MARGIN BOTTOM
+.mb-small {
+  margin-bottom: 5rem;
+}
+
 .header {
   height: 10vh;
   display: flex;

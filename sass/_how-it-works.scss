@@ -1,0 +1,104 @@
+.how-it-works {
+  
+  &__box {
+    padding: 15rem 0;
+  }
+
+
+  &__text {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    column-gap: 10rem;
+    row-gap: 5rem;
+
+    p {
+      font-size: 2rem;
+    line-height: 1.8;
+    }
+  }
+
+  &__steps {
+   display: flex;
+   gap: 8rem;
+   padding-top: 20rem;
+
+   @media only screen and (max-width: $bg-largest) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+    &--card {
+      width: 100%;
+      flex: 1 1 100%;
+
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: stretch;
+
+      position: relative;
+
+      @media only screen and (max-width: $bg-largest) {
+        width: 60%;
+        &:not(:last-child) {
+          margin-bottom: 8rem;
+        }
+      }
+
+      @media only screen and (max-width: $bg-large) {
+        width: 80%;
+        &:not(:last-child) {
+          margin-bottom: 8rem;
+        }
+      }
+
+      &-2 {
+        transform: translateY(30%);
+
+        @media only screen and (max-width: $bg-largest) {
+          transform: translateY(0);
+        }
+      }
+
+      &-3 {
+        transform: translateY(10%);
+
+        @media only screen and (max-width: $bg-largest) {
+          transform: translateY(0);
+        }
+      }
+
+      &-number {
+        font-size: 15rem;
+        color: rgba($color-primary-2, 0.2);
+        position: absolute;
+        transform: translateY(-50%);
+
+      }
+
+      .card-title {
+        font-size: 3rem;
+        color: $color-grey-1;
+        margin-bottom: 6rem;
+        align-self: center;
+        
+      }
+      .card-text {
+        font-size: 2rem;
+        line-height: 2.8rem;
+        color: $color-grey-light-1;
+        margin-bottom: 6rem;
+      }
+      .card-img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+.how-it-works__description {
+}
+.how-it-works__text {
+}
+.how-it-works__steps {
+}
