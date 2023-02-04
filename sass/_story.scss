@@ -1,0 +1,65 @@
+.story {
+  
+  &-section {
+    background-color: $color-primary-1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(60rem, 1fr));
+    align-content: center;
+    align-items: center;
+    overflow: hidden;
+    row-gap: 4rem;
+    padding: 10rem 0;
+  }
+
+  &__text {
+    justify-self: center;
+    width: 70%;
+    gap: 5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+  }
+
+  &__video {
+    position: relative;
+
+    &--box {
+      display: flex;
+      justify-content: center;
+    }
+
+    &--img {
+      display: block;
+      max-width: 70%;
+      max-height: 70%;
+      object-fit: cover;
+    }
+
+    &--icon {
+      display: inline-block;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      padding: 1rem;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.ionicon {
+  width: 4rem;
+  height: 4rem;
+  color: #fff;
+  transform: translateX(5%);
+}
