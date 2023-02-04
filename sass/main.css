@@ -183,50 +183,66 @@ body {
   padding-top: 20rem; }
   @media only screen and (max-width: 68.75em) {
     .how-it-works__steps {
+      padding-top: 15rem; } }
+  @media only screen and (max-width: 68.75em) {
+    .how-it-works__steps {
       flex-direction: column;
-      align-items: center; } }
+      align-items: center;
+      gap: 0; } }
   .how-it-works__steps--card {
     width: 100%;
-    flex: 1 1 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: stretch;
     position: relative; }
+    .how-it-works__steps--card-header {
+      max-width: 100%;
+      display: flex;
+      flex-direction: column; }
+      @media only screen and (max-width: 68.75em) {
+        .how-it-works__steps--card-header {
+          background-color: rgba(255, 255, 255, 0.8);
+          padding: 1.5rem 3rem;
+          z-index: 2;
+          position: absolute;
+          transform: translateY(50%); } }
+      @media only screen and (max-width: 37.5em) {
+        .how-it-works__steps--card-header {
+          transform: translateY(0); } }
     @media only screen and (max-width: 68.75em) {
       .how-it-works__steps--card {
-        width: 60%; }
-        .how-it-works__steps--card:not(:last-child) {
-          margin-bottom: 8rem; } }
+        width: 60%; } }
     @media only screen and (max-width: 56.25em) {
       .how-it-works__steps--card {
-        width: 80%; }
-        .how-it-works__steps--card:not(:last-child) {
-          margin-bottom: 8rem; } }
+        width: 80%; } }
+    @media only screen and (max-width: 37.5em) {
+      .how-it-works__steps--card {
+        width: 100%; } }
     .how-it-works__steps--card-2 {
-      transform: translateY(30%); }
-      @media only screen and (max-width: 68.75em) {
-        .how-it-works__steps--card-2 {
-          transform: translateY(0); } }
+      margin-top: 25rem; }
     .how-it-works__steps--card-3 {
-      transform: translateY(10%); }
-      @media only screen and (max-width: 68.75em) {
-        .how-it-works__steps--card-3 {
-          transform: translateY(0); } }
+      margin-top: 15rem; }
     .how-it-works__steps--card-number {
       font-size: 15rem;
       color: rgba(1, 153, 109, 0.2);
       position: absolute;
       transform: translateY(-50%); }
+      @media only screen and (max-width: 56.25em) {
+        .how-it-works__steps--card-number {
+          font-size: 10rem; } }
     .how-it-works__steps--card .card-title {
       font-size: 3rem;
       color: #292929;
       margin-bottom: 6rem;
-      align-self: center; }
+      align-self: center;
+      z-index: 2; }
     .how-it-works__steps--card .card-text {
       font-size: 2rem;
       line-height: 2.8rem;
       color: #484848;
-      margin-bottom: 6rem; }
+      margin-bottom: 6rem;
+      z-index: 2; }
     .how-it-works__steps--card .card-img {
-      max-width: 100%; }
+      width: 100%;
+      height: 100%; }
