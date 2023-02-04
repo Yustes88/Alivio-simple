@@ -1,0 +1,122 @@
+.how-it-works {
+  
+  &__box {
+    padding: 15rem 0;
+    
+  }
+
+
+  &__text {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    column-gap: 10rem;
+    row-gap: 5rem;
+
+    p {
+      font-size: 2rem;
+    line-height: 1.8;
+    }
+  }
+
+  &__steps {
+   display: flex;
+   gap: 8rem;
+   padding-top: 20rem;
+
+   
+   @media only screen and (max-width: $bg-largest) {
+    padding-top: 15rem;
+   }
+
+   @media only screen and (max-width: $bg-largest) {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+
+   }
+
+    &--card {
+      width: 100%;
+      height: 100%;
+
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      position: relative;
+
+      &-header {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+        @media only screen and (max-width: $bg-largest) {
+          background-color: rgba(#fff, 0.8);
+          padding: 1.5rem 3rem;
+          z-index: 2;
+
+          position: absolute;
+          transform: translateY(50%);
+        }
+
+        @media only screen and (max-width: $bg-medium) {
+          transform: translateY(0);
+        }
+
+      }
+
+      @media only screen and (max-width: $bg-largest) {
+        width: 60%;
+      }
+
+      @media only screen and (max-width: $bg-large) {
+        width: 80%;
+      }
+
+      @media only screen and (max-width: $bg-medium) {
+        width: 100%;
+      }
+
+      &-2 {
+        margin-top: 25rem;
+
+      }
+
+      &-3 {
+        margin-top: 15rem;
+
+      }
+
+      &-number {
+        font-size: 15rem;
+        color: rgba($color-primary-2, 0.2);
+        position: absolute;
+        transform: translateY(-50%);
+
+        @media only screen and (max-width: $bg-large) {
+          font-size: 10rem;
+        }
+      }
+
+      .card-title {
+        font-size: 3rem;
+        color: $color-grey-1;
+        margin-bottom: 6rem;
+        align-self: center;
+        z-index: 2;
+        
+      }
+      .card-text {
+        font-size: 2rem;
+        line-height: 2.8rem;
+        color: $color-grey-light-1;
+        margin-bottom: 6rem;
+        z-index: 2;
+      }
+      .card-img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

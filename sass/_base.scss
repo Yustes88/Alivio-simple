@@ -21,6 +21,7 @@ $bg-largest2: 106em; // 1700px
 $bg-largest1: 81.25em; // 1300px
 $bg-largest: 68.75em; // 1100px
 $bg-large: 56.25em; // 900px
+$bg-medium: 37.5em; // 600px
 
 *,
 *::before,
@@ -54,6 +55,23 @@ body {
 .heading--1 {
   font-size: 6.5rem;
   color: $color-primary-2;
+}
+
+.heading--2 {
+  font-size: 5rem;
+  color: $color-primary-2;
+  line-height: 6rem;
+}
+
+.heading--sub {
+  font-size: 2.4rem;
+  color: $color-grey-2;
+  font-weight: 400;
+}
+
+// MARGIN BOTTOM
+.mb-small {
+  margin-bottom: 5rem;
 }
 
 .header {
