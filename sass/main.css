@@ -29,6 +29,9 @@ body {
   font-size: 5rem;
   color: #01996d;
   line-height: 6rem; }
+  @media only screen and (max-width: 37.5em) {
+    .heading--2 {
+      font-size: 4rem; } }
 
 .heading--sub {
   font-size: 2.4rem;
@@ -254,21 +257,24 @@ body {
   background-color: #245852;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  overflow: hidden; }
 
 .story__box {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(60rem, 1fr));
-  align-content: center;
   align-items: center;
-  overflow: hidden;
   row-gap: 4rem;
-  padding: 10rem 0; }
+  padding: 10rem 2rem; }
+  @media only screen and (max-width: 37.5em) {
+    .story__box {
+      grid-template-columns: auto-fit; } }
 
 .story__text {
   justify-self: center;
-  width: 70%;
+  max-width: 70%;
   gap: 5rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -278,7 +284,8 @@ body {
   position: relative; }
   .story__video--box {
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    margin: 0; }
   .story__video--img {
     display: block;
     max-width: 70%;
