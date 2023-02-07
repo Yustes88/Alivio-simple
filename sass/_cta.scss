@@ -1,5 +1,4 @@
 .cta {
-  max-height: 100vh;
 
   &__box {
     max-width: 80%;
@@ -8,36 +7,65 @@
     gap: 6rem;
     position: relative;
     align-items: stretch;
+
+    @media only screen and (max-width: $bg-largest) {
+      max-width: 100%;
+    }
+
+    @media only screen and (max-width: $bg-large) {
+      flex-direction: column-reverse;
+    }
   }
 
   &__img-box {
     padding: 2rem;
     background-color: rgba($color-primary-2, 0.2);
     border-radius: 20px;
-    display: flex;
-    justify-content: center;
     
   }
   
   &__img {
     max-width: 50%;
     object-fit: cover;
+    display: block;
+    margin: 0 auto;
+
+    @media only screen and (max-width: $bg-medium) {
+      margin-right: 0;
+    }
+
+    @media only screen and (max-width: $bg-small) {
+      margin: 0 auto;
+    }
   }
 
 
   &__custom {
     position: absolute;
-    bottom: -5%;
-    left: -5%;
+    margin-top: 30rem;
+    margin-left: -5rem;
     background-color: #fff;
-    width: 20rem;
-    height: 25rem;
+    max-width: 20rem;
+    max-height: 25rem;
     padding: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    border: 1px solid rgba($color-primary-2, 0.2);
     box-shadow: $box-shadow-1;
+
+    @media only screen and (max-width: $bg-medium) {
+      max-width: 15rem;
+      max-height: 25rem;
+      margin-left: 10%;
+      margin-bottom: 3%;
+    }
+
+    @media only screen and (max-width: $bg-small) {
+      display: none;
+      visibility: none;
+    }
 
     &-subheading {
       font-size: 1.4rem;
