@@ -1,0 +1,102 @@
+.cta {
+  max-height: 100vh;
+
+  &__box {
+    max-width: 80%;
+    margin: 10rem auto;
+    display: flex;
+    gap: 6rem;
+    position: relative;
+    align-items: stretch;
+  }
+
+  &__img-box {
+    padding: 2rem;
+    background-color: rgba($color-primary-2, 0.2);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  &__img {
+    max-width: 50%;
+    object-fit: cover;
+  }
+
+
+  &__custom {
+    position: absolute;
+    bottom: -5%;
+    left: -5%;
+    background-color: #fff;
+    width: 20rem;
+    height: 25rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: $box-shadow-1;
+
+    &-subheading {
+      font-size: 1.4rem;
+      border-bottom: 2px solid $color-grey-light-1;
+      padding: 1.5rem 0;
+    }
+    
+
+    &--img {
+      max-width: 5rem;
+      border-radius: 50%;
+    }
+
+    &--name {
+      padding-bottom: 2rem;
+    }
+
+    &--title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      padding-bottom: 1rem;
+    }
+
+    &__list-item {
+      padding-bottom: 1rem;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+
+    &--description {
+      font-size: 2rem;
+      line-height: 2.8rem;
+    }
+  }
+}
+
+
+.cta__img-box {
+}
+
+.cta__custom-subheading {
+}
+.cta__img--small {
+}
+.cta__custom--name {
+}
+.cta__custom--title {
+}
+.cta__custom--list {
+}
+.cta__custom__list-item {
+}
+.cta__text {
+}
+
+.cta__text--description {
+}
