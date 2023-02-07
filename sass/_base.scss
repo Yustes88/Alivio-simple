@@ -22,6 +22,7 @@ $bg-largest1: 81.25em; // 1300px
 $bg-largest: 68.75em; // 1100px
 $bg-large: 56.25em; // 900px
 $bg-medium: 37.5em; // 600px
+$bg-small: 25em; // 400px
 
 *,
 *::before,
@@ -61,6 +62,11 @@ body {
   font-size: 5rem;
   color: $color-primary-2;
   line-height: 6rem;
+
+  @media only screen and (max-width: $bg-largest) {
+    font-size: 4.5rem;
+    line-height: 5rem;
+  }
 
   @media only screen and (max-width: $bg-medium) {
     font-size: 4rem;
